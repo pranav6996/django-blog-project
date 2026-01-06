@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neat Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            background: #0f172a; /* dark slate */
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, #6366f1, #22d3ee);
+            color: #020617;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .card {
+            background: #020617;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .card h2 {
+            color: #38bdf8;
+            margin-bottom: 0.75rem;
+        }
+
+        .card p {
+            color: #cbd5f5;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .mini-card {
+            background: #020617;
+            padding: 1.5rem;
+            border-radius: 14px;
+            border: 1px solid #1e293b;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .mini-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(56,189,248,0.2);
+        }
+
+        .mini-card h3 {
+            color: #22d3ee;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Clean Website</h1>
+        <p>Simple. Modern. No nonsense.</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>About This Page</h2>
+            <p>
+                This is a minimal HTML page designed with clean spacing,
+                modern colors, and smooth layout. No frameworks, no clutter —
+                just solid structure.
+            </p>
+        </div>
+
+        <div class="grid">
+            <div class="mini-card">
+                <h3>Fast</h3>
+                <p>Lightweight design that loads instantly.</p>
+            </div>
+
+            <div class="mini-card">
+                <h3>Responsive</h3>
+                <p>Works beautifully on mobile and desktop.</p>
+            </div>
+
+            <div class="mini-card">
+                <h3>Readable</h3>
+                <p>Clean typography and proper spacing.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        © 2025 •All rights reserved
+    </footer>
+
+</body>
+</html>
